@@ -119,4 +119,4 @@ type Show {
 }
 `;
 
-module.exports = typeDefs;
+export default typeDefs;

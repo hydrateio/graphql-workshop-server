@@ -14,4 +14,4 @@ class TranslateAPI extends RESTDataSource {
   }
 }
 
-module.exports = TranslateAPI;
+export default TranslateAPI;

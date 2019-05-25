@@ -3,7 +3,7 @@ import path from 'path';
 
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'got.json')));
 
-module.exports = {
+const resolvers = {
   Query: {
     episode: async (root, params, context) => {
       const result = data._embedded.episodes.find(d => d.id === params.id);
@@ -18,3 +18,5 @@ module.exports = {
     },
   },
 };
+
+export default resolvers;
