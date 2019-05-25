@@ -1,7 +1,5 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
-import fs from 'fs';
-import path from 'path';
 import bodyParser from 'body-parser';
 import schema from '../schema';
 import resolvers from '../resolvers';
