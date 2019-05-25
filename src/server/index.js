@@ -17,29 +17,6 @@ app.use(bodyParser.json());
 const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
-  context: {
-    readJson: (entity) => {
-      const jsonPath = path.join(__dirname, '..', 'data', `${entity}.json`);
-      const json = fs.readFileSync(jsonPath);
-      return JSON.parse(json);
-    },
-    writeJson: (entity, data) => {
-      const jsonPath = path.join(__dirname, '..', 'data', `${entity}.json`);
-      fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
-    },
-    readJsonAsync: (entity) => {
-      return new Promise((resolve, reject) => {
-        const jsonPath = path.join(__dirname, '..', 'data', `${entity}.json`);
-        fs.readFile(jsonPath, (err, data) => {
-          if (err) {
-            reject(err);
-          }
-
-          resolve(JSON.parse(data));
-        });
-      });
-    },
-  },
   // mocks,
   dataSources: () => {
     return {
