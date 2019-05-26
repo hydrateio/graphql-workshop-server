@@ -1,14 +1,11 @@
 env:
   es6: true
-  mocha: true
   node: true
 extends: 'airbnb-base'
 parserOptions:
   ecmaFeatures:
     modules: true
   sourceType: module
-plugins:
-  - mocha
 globals:
     jest: readable
     expect: readable
@@ -18,7 +15,6 @@ rules:
     - error
     -
       devDependencies: true
-  "mocha/no-exclusive-tests": error
   generator-star-spacing: off
   no-unused-expressions: off
   "no-console": off
