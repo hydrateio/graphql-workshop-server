@@ -23,8 +23,8 @@
     "prettier": "^1.17.1"
   },
   "scripts": {
-    "dev": "NODE_ENV=development nodemon -r esm src/server.js",
-    "start": "NODE_ENV=production nodemon -r esm src/server.js",
+    "dev": "nodemon -r esm src/server.js",
+    "start": "nodemon -r esm src/server.js",
     "lint": "eslint src",
     "lint:fix": "eslint \"src/**/*.js\" --fix",
     "pre-commit": "lint-staged"

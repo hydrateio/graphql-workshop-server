@@ -4,20 +4,14 @@
   "name": "Game of Thrones",
   "type": "Scripted",
   "language": "English",
-  "genres": [
-    "Drama",
-    "Adventure",
-    "Fantasy"
-  ],
+  "genres": ["Drama", "Adventure", "Fantasy"],
   "status": "Ended",
   "runtime": null,
   "premiered": "2011-04-17",
   "officialSite": "http://www.hbo.com/game-of-thrones",
   "schedule": {
     "time": "21:00",
-    "days": [
-      "Sunday"
-    ]
+    "days": ["Sunday"]
   },
   "rating": {
     "average": 9.2
