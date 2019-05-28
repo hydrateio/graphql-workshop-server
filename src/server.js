@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
+  introspection: true,
   // mocks,
   dataSources: () => {
     return {
